@@ -29,11 +29,39 @@
     </div>
 
     <ul class="main-menu">
+
         
         <li data-ui-sref-active="active">
             <a data-ui-sref="home" data-ng-click="mactrl.sidebarStat($event)"><i class="zmdi zmdi-home"></i> Home</a>
         </li>
         <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('headers') }">
+            <a href="" toggle-submenu><i class="zmdi zmdi-view-compact"></i> Attendance</a>
+
+            <ul>
+                <li><a data-ui-sref-active="active" data-ui-sref="headers.textual-menu" data-ng-click="mactrl.sidebarStat($event)">Take Attendance</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="headers.image-logo" data-ng-click="mactrl.sidebarStat($event)">View Attendance</a></li>
+            </ul>
+        </li>
+        <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('headers') }">
+            <a href="" toggle-submenu><i class="zmdi zmdi-view-compact"></i> Members</a>
+
+            <ul>
+                <li><a data-ui-sref-active="active" data-ui-sref="headers.textual-menu" data-ng-click="mactrl.sidebarStat($event)">Add Member</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="headers.image-logo" data-ng-click="mactrl.sidebarStat($event)">View Member</a></li>
+            </ul>
+        </li>
+        <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('headers') }">
+            <a href="" toggle-submenu><i class="zmdi zmdi-view-compact"></i> Diary</a>
+            <ul>
+                <li><a data-ui-sref-active="active" data-ui-sref="headers.textual-menu" data-ng-click="mactrl.sidebarStat($event)">Add Diary</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="headers.image-logo" data-ng-click="mactrl.sidebarStat($event)">Manage Diary</a></li>
+                
+            </ul>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="typography" data-ng-click="mactrl.sidebarStat($event)"><i class="zmdi zmdi-format-underlined"></i> About NanleInc</a>
+        </li>
+       <!-- <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('headers') }">
             <a href="" toggle-submenu><i class="zmdi zmdi-view-compact"></i> Headers</a>
 
             <ul>
@@ -147,9 +175,6 @@
                 </li>
                 <li><a href="">One more 2</a></li>
             </ul>
-        </li>
-        <li>
-            <a href="https://wrapbootstrap.com/theme/material-admin-responsive-angularjs-WB011H985"><i class="zmdi zmdi-money"></i> Buy this template</a>
         </li>
     </ul>
 </div>
