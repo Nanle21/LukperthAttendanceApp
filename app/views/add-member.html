@@ -43,13 +43,20 @@
         <div class="row">
 
             <div class="col-sm-7">
-                <div class="input-group fg-float">
-                    <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
-                    <div class="fg-line">
-                        <input type="text" class="form-control">
-                        <label class="fg-label">Level</label> 
-                    </div>
+            <div class="fg-line">
+                <div class="col-sm-7 m-b-15">
+                    
+                    <select chosen data-placeholder="Select a Hall..." class="w-100">
+                        <option value=""></option>
+                        <option value="100">100 Level</option>
+                        <option value="200">200 Level</option>
+                        <option value="300">300 Level</option>
+                        <option value="400">400 Level</option>
+                        <option value="500">500 Level</option>
+                    </select>
                 </div>
+                <label class="fg-label">Select Level</label>
+            </div>   
             </div> 
     
         </div>
@@ -63,13 +70,26 @@
                 <div class="input-group fg-float">
                     <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
                     <div class="fg-line">
-                        <input type="text" class="form-control">
+                         <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <div class="fileinput-preview thumbnail" data-trigger="fileinput"></div>
+                                <div>
+                                    <span class="btn btn-info btn-file">
+                                        <span class="fileinput-new">Select image</span>
+                                        <span class="fileinput-exists">Change</span>
+                                        <input type="file" name="...">
+                                    </span>
+                                    <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                 </div>
+                            </div>
                         <label class="fg-label">Photo</label> 
                     </div>
                 </div>
             </div> 
     
         </div>
+
+
+       
 
         <br>
         <br>
@@ -175,24 +195,32 @@
         <br>
         <br>
         <div class="row">
-
-            <div class="col-sm-7">
-                <div class="input-group fg-float">
-                    <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
                     <div class="fg-line">
-                        <input type="text" class="form-control">
-                        <label class="fg-label">Hall</label> 
-                    </div>
+            <div class="col-sm-7">
+            
+                <div class="col-sm-7 m-b-15">
+                    
+                    <select chosen data-placeholder="Select a Hall..." class="w-100">
+                        <option value=""></option>
+                        <option value="United States">Daniel Hall</option>
+                        <option value="United Kingdom">Joseph Kingdom</option>
+                        <option value="Afghanistan">Abraham Hall</option>
+                        <option value="Aland Islands">Jessicah Hall</option>
+                        <option value="Albania">Nanle Hall</option>
+                        <option value="Algeria">Null Hall</option>
+                        <option value="American Samoa">Love  Hall</option>
+                    </select>
                 </div>
+                <label class="fg-label">Select Hall</label>
             </div> 
-    
+        </div>
         </div>
 
         <br>
         <br>
 
         <div class="row">
-             <button class="btn bgm-cyan">Add Info</button>
+             <button class="btn bgm-cyan">Add Member</button>
         </div>
     </div>
 </div> 
